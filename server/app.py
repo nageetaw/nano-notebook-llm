@@ -1,3 +1,5 @@
+# we are following steps from this doc for understanding RAG  https://developers.llamaindex.ai/python/framework/understanding/rag/
+# we will use llamaindex which help us in all steps from loading to querying and we use pinecone to store our docs as embeddings 
 from llama_index.core import SimpleDirectoryReader, VectorStoreIndex, Settings, StorageContext
 from llama_index.vector_stores.pinecone import PineconeVectorStore
 from pinecone import Pinecone
