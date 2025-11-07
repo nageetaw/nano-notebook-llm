@@ -12,3 +12,5 @@ pypdf2
 tiktoken
 llama-index-vector-stores-pinecone
 llama-index-embeddings-huggingface
+python-dotenv
+huggingface-hub

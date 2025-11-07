@@ -17,7 +17,7 @@ Settings.embed_model = HuggingFaceEmbedding(
     model_name="BAAI/bge-small-en-v1.5"
 ) # this will be our model used for create embedding when we call VectorStoreIndex.from_document, make sure the index has same dimenion as the model 
 
-pinecone_index = pc.Index("nano-notebook-llm-mistrall")
+pinecone_index = pc.Index(os.getenv('PINECONE_INDEX'))
 vector_store = PineconeVectorStore(pinecone_index=pinecone_index) # creating a vector store within index
 
 storage_context = StorageContext.from_defaults(vector_store=vector_store ) # get the storage context to store vectors
