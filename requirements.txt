@@ -1,0 +1,14 @@
+llama-index
+chromadb
+pinecone-client
+sentence-transformers
+transformers
+requests
+fastapi
+uvicorn
+streamlit
+python-multipart
+pypdf2
+tiktoken
+llama-index-vector-stores-pinecone
+llama-index-embeddings-huggingface
