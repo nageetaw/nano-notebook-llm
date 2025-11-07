@@ -1,0 +1,2 @@
+Machine learning has supervised and unsupersied learning
+then in unsupersied we have self supervised, semi supervised, domain adaptation and representation learning.
