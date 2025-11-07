@@ -65,6 +65,6 @@ async def upload_pdf(file: UploadFile = File(...)):
 async def query_doc(question: str = Form(...)):
     index = VectorStoreIndex.from_vector_store(vector_store)
     # Later we will update this to chat engine
-    query_engine = index.as_query_engine()
+    query_engine = index.as_query_engine() ## this is using open AI model gpt3
     response = query_engine.query(question)
     return {"response": str(response)}
